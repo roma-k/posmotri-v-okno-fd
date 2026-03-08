@@ -70,6 +70,7 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   width: 711px;
   height: 386px;
 }
@@ -97,6 +98,7 @@ ol {
   font-weight: 400;
   line-height: 22px;
 }
+
 .search-form__label {
   display: flex;
   flex-direction: row;
@@ -113,32 +115,32 @@ ol {
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-font-family: 'Fira Sans Condensed', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 22px;
-color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
 }
 
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
 }
 
-.search-form__label:has(input[type=checkbox]):hover {
+.search-form__label:has(input[type='checkbox']):hover {
   cursor: pointer;
 }
 
-.search-form__label:has(input[type=checkbox]):hover .search-form__label-text {
+.search-form__label:has(input[type='checkbox']):hover .search-form__label-text {
   text-decoration: underline;
 }
 
-.search-form__textfield:focus, 
+.search-form__textfield:focus,
 .search-form__label:has(:focus) {
   outline: none;
 }
 
-.search-form__label:has(input[type="checkbox"]:focus-visible),
+.search-form__label:has(input[type='checkbox']:focus-visible),
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 2px;
@@ -194,6 +196,7 @@ color: #fff;
 
 .content__list-container {
   display: flex;
+  position: relative;
   flex-direction: column;
   gap: 30px;
   height: 298px;
@@ -267,7 +270,6 @@ color: #fff;
   font-size: 18px;
   line-height: 18px;
   text-overflow: ellipsis;
-  line-clamp: 4;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
@@ -284,15 +286,15 @@ color: #fff;
 
 .button {
   padding: 6px 18px;
-font-family: 'Fira Sans Condensed';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 22px;
-text-align: center;
-color: #FFFFFF;
-border: 1px solid #fff;
-background-color: #1b1919;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #1b1919;
 }
 
 .button:hover {
