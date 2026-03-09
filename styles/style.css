@@ -58,7 +58,7 @@ ol {
 .content {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
   width: 1140px;
   gap: 30px;
 }
